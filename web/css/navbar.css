@@ -1,0 +1,155 @@
+:root {
+    --navbarHeight: 65px;
+    --sidebarWidth: 45vw;
+    --primary: #080808;
+    --secondary: #ffc600;
+}
+
+.navbar {
+    position: relative;
+    background: var(--primary);
+    color: #fff;
+    padding: 0 15px;
+    width: 100%;
+    height: var(--navbarHeight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar__links {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease all, 0s ease background;
+}
+.navbar__link {
+    height: var(--navbarHeight);
+    text-transform: uppercase;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__link a {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar__link:hover {
+    background: var(--secondary);
+    cursor: pointer;
+}
+.navbar__link:hover a {
+    color: var(--primary);
+}
+
+.navbar.sticky {
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar__toggler{
+    opacity: 0;
+}
+
+@keyframes appears {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes appears2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 750px) {
+    .navbar .navbar__toggler {
+        opacity: 1;
+        position: absolute;
+        top: calc(var(--navbarHeight) / 2);
+        left: 20px;
+        z-index: 99;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 40px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        outline: none;
+        border: none;
+        padding: 0;
+        animation: appears 1s;
+    }
+    .navbar__toggler > * {
+        width: 80%;
+        height: 3px;
+        background: #fff;
+        margin: 3px 0;
+        transition: 0.1s all; 
+    }
+    /* for X transition */
+    .navbar.collapsed .navbar__toggler .line1 {
+        transform: translateY(9px) rotate(-45deg);
+    }
+    .navbar.collapsed .navbar__toggler .line2 {
+        opacity: 0;
+    }
+    .navbar.collapsed .navbar__toggler .line3 {
+        transform: translateY(-9px) rotate(45deg);
+    }
+
+    .navbar__links {
+        position: fixed;
+        background: #080808;
+        z-index: 40;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        width: var(--sidebarWidth);
+        height: 100vh;
+    }
+
+    .navbar.collapsed .navbar__links {
+        left: 0;
+    }
+
+    .navbar__link:first-child {
+        margin-top: 80px;
+    }
+    .navbar.collapsed .navbar__link {
+        width: 100%;
+    }
+    .navbar.collapsed .navbar__link a {
+        color: #fff;
+    }
+    .navbar.collapsed .navbar__linki:hover a {
+        color: var(--primary);
+    }
+
+    .navbar.sticky {
+        position: fixed;
+        z-index: 40;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .navbar.collapsed .navbar__toggler{
+        position: fixed;
+        animation: appears2 1s;
+    }
+}

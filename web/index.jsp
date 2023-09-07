@@ -4,48 +4,78 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Proy</title>
-        <link rel="stylesheet" href="index.css"/>
-        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/navbar.css"/>
+
+        <script src="js/index.js" defer></script>
+
+        <!-- Font awseome icons -->
+        <script src="https://kit.fontawesome.com/15feb8d600.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
-        <main style="font-size: 60px">
-            lorem asdsaopjd
-            lorem asdsaopjd
-            lorem asdsaopjd
-            lorem asdsaopjd
-
-        </main>
+        <header class="header">
+            <div class="header__left">
+                <ul class="sm-content">
+                    <li class="sm sm-instagram"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="sm sm-facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="sm sm-youtube"><a href="$"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="header__center">
+                <div class="logo-content">
+                    <a href="#">
+                        <img src="img/syd-logo.jpg" alt="Logo de Secrets & Details"/>
+                    </a>
+                </div>
+            </div>
+            <div class="header__right">
+                <div class="info-content">
+                    <a href="#" class="wsp-link">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>+51 998776112</p>
+                    </a>
+                </div>
+            </div>
+        </header>
         <nav class="navbar">
-
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Contact Us</a></li>
+            <ul class="navbar__links">
+                <li class="navbar__link"><a href="#">Inicio</a></li>
+                <li class="navbar__link"><a href="#">Nosotros</a></li>
+                <li class="navbar__link"><a href="#">Catálogo</a></li>
+                <li class="navbar__link"><a href="#">Contacto</a></li>
             </ul>
 
-            <div class="toggle">
+            <button class="navbar__toggler" type="button" title="navbar__toggler-btn">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
-
-
+            </button>
         </nav>
-        
-        <main style="font-size: 60px">
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
 
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
-            lorem asdsaopjd ojspadpo sajpod jposajd posapojd spjao djposapjo dapojsd ojpsad ojpasojdpsa
+        <div class="main-slider">
+            <!-- TODO: slider -->
+            <img src="img/img2.jpg" alt="alt"/>
+        </div>
+
+        <main class="main-content">
+            <section class="prom">
+                <div class="prom__content">
+                    <h1 class="prom__title">Promociones</h1>
+                    
+                    <div class="prm__cards">
+                        <article class="prom__card">
+                            <img src="img/img1.jpg" alt="alt"/>
+                            <h2 class="card__title">Corset negro</h2>
+                            <h3 class="card__price">S/. 100.00</h3>
+                            <div class="card__colors">
+                                <div class="card__color color-red"></div>
+                                <div class="card__color color-blue"></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
