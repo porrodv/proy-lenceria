@@ -6,6 +6,7 @@
         <title>Proy</title>
         <link rel="stylesheet" href="css/index.css"/>
         <link rel="stylesheet" href="css/navbar.css"/>
+        <link rel="stylesheet" href="css/footer.css"/>
 
         <script src="js/index.js" defer></script>
 
@@ -62,7 +63,7 @@
             <section class="prom">
                 <div class="prom__content">
                     <h1 class="prom__title">Promociones</h1>
-                    
+
                     <div class="prm__cards">
                         <article class="prom__card">
                             <img src="img/img1.jpg" alt="alt"/>
@@ -77,5 +78,31 @@
                 </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <img src="img/syd-logo.jpg" alt="Logo de la tienda de lencería">
+                </div>
+                <div class="footer__links">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <p>Dirección: Tu dirección</p>
+                <p>Teléfono: Tu número de teléfono</p>
+                <p>Email: tu@email.com</p>
+            </div>
+        </footer>
     </body>
 </html>
