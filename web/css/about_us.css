@@ -1,0 +1,140 @@
+.head{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.head h1{
+    font-size: 50px;
+    padding-top: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.head p{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about__image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about__image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about__image:hover  img{
+    transform: scale(1.2);
+}
+.about__content{
+    flex: 1;
+}
+.about__content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #000;
+}
+.about__content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}
+
+
+.heading h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+}
+
+.content-section{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 15px;
+    padding: 20px 20px;
+    background-color: #eee;
+    cursor: pointer;
+}
+.hero:hover{
+    background-color: bisque;
+    transition: 0.6s ease;
+}
+.hero .icon{
+    font-size: 45px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.hero h2{
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color:#080808;
+}
+
+
+@media screen and (max-width:940px){
+    .content-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero{
+        width: 100%;
+        display: flex;
+        margin: 20px 0px;
+    }
+    .head{
+        padding: 0px 20px;
+    }
+    .head p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}

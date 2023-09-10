@@ -5,6 +5,78 @@
     --secondary: #ffc600;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.7rem;
+}
+.header__left{
+    margin: 1rem;
+}
+
+.sm-content{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.sm-content .sm{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.sm-content i{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: crimson;
+    transition: 0.15s color;
+}
+.sm-content i:hover{
+    color: brown;
+}
+
+
+.header__center{
+    height: 100%;
+    padding: 0 2rem;
+}
+.logo-content{
+    width: 200px;
+    height: 100%;
+}
+.logo-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.info-content .wsp-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: green;
+}
+.info-content .wsp-link i{
+    font-size: 25px;
+}
+
+
+/* Navbar */
 .navbar {
     position: relative;
     background: var(--primary);
@@ -99,7 +171,7 @@
         height: 3px;
         background: #fff;
         margin: 3px 0;
-        transition: 0.1s all; 
+        transition: 0.1s all;
     }
     /* for X transition */
     .navbar.collapsed .navbar__toggler .line1 {
@@ -147,7 +219,7 @@
         left: 0;
         right: 0;
     }
-    
+
     .navbar.collapsed .navbar__toggler{
         position: fixed;
         animation: appears2 1s;

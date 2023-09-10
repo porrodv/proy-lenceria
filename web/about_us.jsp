@@ -3,20 +3,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Proy</title>
         <link rel="stylesheet" href="css/global.css"/>
         <link rel="stylesheet" href="css/header.css"/>
-        <link rel="stylesheet" href="css/footer.css"/>
         
         <link rel="stylesheet" href="css/about_us.css"/>
-        <link rel="stylesheet" href="css/index.css"/>
-
+        
         <script src="js/index.js" defer></script>
-
         <!-- Font awseome icons -->
         <script src="https://kit.fontawesome.com/15feb8d600.js" crossorigin="anonymous"></script>
+        <title>Nosotros</title>
     </head>
-
     <body>
         <header class="header">
             <div class="header__left">
@@ -57,11 +53,7 @@
             </button>
         </nav>
 
-        <div class="main-slider">
-            <!-- TODO: slider -->
-            <img src="img/img2.jpg" alt="alt"/>
-        </div>
-
+        
         <div class="head">
             <h1>Nosotros</h1>
         </div>
@@ -89,78 +81,44 @@
                 </div>
             </section>
         </div>
-        
-        <main class="main-content">
-            <section class="prom">
-                <div class="prom__content">
-                    <h1 class="prom__title">Promociones</h1>
-
-                    <div class="prom__cards">
-                        <article class="prom__card">
-                            <img src="img/img1.jpg" alt="alt"/>
-                            <h2 class="card__title">Corset</h2>
-                            <h3 class="card__price">S/. 100.00</h3>
-                            <div class="card__colors">
-                                <div class="card__color color-black"></div>
-                                <div class="card__color color-blue"></div>
-                            </div>
-                        </article>
-                        <article class="prom__card">
-                            <img src="img/babydoll.jpg" alt="alt"/>
-                            <h2 class="card__title">BadyDoll</h2>
-                            <h3 class="card__price">S/. 120.00</h3>
-                            <div class="card__colors">
-                                <div class="card__color color-red"></div>
-                                <div class="card__color color-pink"></div>
-                            </div>
-                        </article>
-                        <article class="prom__card">
-                            <img src="img/pushup.jpg" alt="alt"/>
-                            <h2 class="card__title">Sujetador Push Up</h2>
-                            <h3 class="card__price">S/. 50.00</h3>
-                            <div class="card__colors">
-                                <div class="card__color color-orange"></div>
-                                <div class="card__color color-red"></div>
-                            </div>
-                        </article>
-                        <article class="prom__card">
-                            <img src="img/tanga.jpg" alt="alt"/>
-                            <h2 class="card__title">Tanga</h2>
-                            <h3 class="card__price">S/. 30.00</h3>
-                            <div class="card__colors">
-                                <div class="card__color color-yellow"></div>
-                                <div class="card__color color-pink"></div>
-                            </div>
-                        </article>
+        <div class="main-section">
+            <div class="container">
+                <div class="heading">
+                    <h1>Misión, Visión y Valores</h1>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="hero">
+                    <div class="icon">
+                        <i class="#"></i>    
                     </div>
+                    <h2>Misión</h2>
+                    <p>Nuestra misión es ofrecer un nuevo concepto 
+                        de ropa interior y ropa íntima de buen gusto, con el objetivo 
+                        de satisfacer las necesidades y deseos de una mujer inteligente, 
+                        experimentada y versátil.</p><br>
                 </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="footer__logo">
-                    <img src="img/syd-logo.jpg" alt="Logo de la tienda de lencería">
+                <div class="hero">
+                    <div class="icon">
+                        <i class="#"></i>    
+                    </div>
+                    <h2>Visión</h2>
+                    <p>Nuestra visión es posicionarnos como líder del mercado a nivel local y 
+                        nacional  en la producción, comercialización y distribución  de  
+                        ropa interior e íntima femenina basada en recursos naturales con  
+                        crecimiento e innovación continuos</p>
                 </div>
-                <div class="footer__links">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Catálogo</a></li>
-                        <li><a href="#">Acerca de Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer__social">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                <div class="hero">
+                    <div class="icon">
+                        <i class="#"></i>    
+                    </div>
+                    <h2>Valores</h2>
+                    <p>Apostamos por los valores que han determinado nuestra identidad,
+                        para mirar al futuro con plena garantía. Excelencia  Esfuerzo -
+                        Pasión - Trabajo - Cercanía  Humildad - Integridad - Sentido común 
+                        Innovación - Honestidad - Transparencia</p>
                 </div>
             </div>
-            <div class="footer__info">
-                <p>Dirección: Tu dirección</p>
-                <p>Teléfono: Tu número de teléfono</p>
-                <p>Email: tu@email.com</p>
-            </div>
-        </footer>
+        </div>   
     </body>
 </html>
