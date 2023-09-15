@@ -5,6 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/global.css"/>
         <link rel="stylesheet" href="css/header.css"/>
+        <link rel="stylesheet" href="css/footer.css"/>
         
         <link rel="stylesheet" href="css/about_us.css"/>
         
@@ -60,7 +61,7 @@
         <div class="container">
             <section class="about">
                 <div class="about__image">
-                    <img src="img/about_us_image.jpeg" alt="alt"/>
+                    <img src="img/about_us_image.jpg" alt="alt"/>
                 </div>
                 <div class="about__content">
                     <h2>Quienes Somos</h2>
@@ -119,6 +120,33 @@
                         Innovación - Honestidad - Transparencia</p>
                 </div>
             </div>
-        </div>   
+        </div>        
+        
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <img src="img/syd-logo.jpg" alt="Logo de la tienda de lencería">
+                </div>
+                <div class="footer__links">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <p>Dirección: Tu dirección</p>
+                <p>Teléfono: Tu número de teléfono</p>
+                <p>Email: tu@email.com</p>
+            </div>
+        </footer>
+        
     </body>
 </html>

@@ -2,7 +2,7 @@
     --navbarHeight: 65px;
     --sidebarWidth: 45vw;
     --primary: #080808;
-    --secondary: #ffc600;
+    --secondary: #ad6a83;
 }
 
 ul {
@@ -149,7 +149,7 @@ ul {
     .navbar .navbar__toggler {
         opacity: 1;
         position: absolute;
-        top: calc(var(--navbarHeight) / 2);
+        top: calc(--navbarHeight/ 2);
         left: 20px;
         z-index: 99;
         transform: translateY(-50%);

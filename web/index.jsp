@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/global.css"/>
         <link rel="stylesheet" href="css/header.css"/>
         <link rel="stylesheet" href="css/footer.css"/>
+        <link rel="stylesheet" href="css/contact_us.css"/>
         
         <link rel="stylesheet" href="css/about_us.css"/>
         <link rel="stylesheet" href="css/index.css"/>
@@ -61,14 +62,11 @@
             <!-- TODO: slider -->
             <img src="img/img2.jpg" alt="alt"/>
         </div>
-
-        <div class="head">
-            <h1>Nosotros</h1>
-        </div>
+        
         <div class="container">
             <section class="about">
                 <div class="about__image">
-                    <img src="img/about_us_image.jpeg" alt="alt"/>
+                    <br><img src="img/about_us_image.jpg" alt="alt"/>
                 </div>
                 <div class="about__content">
                     <h2>Quienes Somos</h2>
@@ -81,11 +79,8 @@
                         sólo por sus productos, sino también por las experiencias, 
                         sueños e ilusiones que ofrece a las mujeres que quieren 
                         destacar y mostrar su belleza al mundo, transmitiendo 
-                        confianza y autoconfianza. Gracias a personas emprendedoras 
-                        y dedicadas a sus clientes, permiten a la mujer disfrutar 
-                        de su sensualidad y erotismo no sólo en momentos especiales, 
-                        sino también en el día a día, ofreciendo estética y 
-                        comodidad en todos sus modelos.</p>
+                        confianza y autoconfianza.</p>
+                    <a href="about_us.jsp" class="read-more">Leer Más</a>
                 </div>
             </section>
         </div>
@@ -97,36 +92,36 @@
 
                     <div class="prom__cards">
                         <article class="prom__card">
-                            <img src="img/img1.jpg" alt="alt"/>
-                            <h2 class="card__title">Corset</h2>
-                            <h3 class="card__price">S/. 100.00</h3>
+                            <img src="img/setdeluxe.jpeg" alt="alt"/>
+                            <h2 class="card__title">Set Deluxe</h2>
+                            <h3 class="card__price">S/. 70.00</h3>
                             <div class="card__colors">
                                 <div class="card__color color-black"></div>
                                 <div class="card__color color-blue"></div>
                             </div>
                         </article>
                         <article class="prom__card">
-                            <img src="img/babydoll.jpg" alt="alt"/>
-                            <h2 class="card__title">BadyDoll</h2>
-                            <h3 class="card__price">S/. 120.00</h3>
+                            <img src="img/Corset.jpeg" alt="alt"/>
+                            <h2 class="card__title">Corset Angeline</h2>
+                            <h3 class="card__price">S/. 68.00</h3>
                             <div class="card__colors">
                                 <div class="card__color color-red"></div>
                                 <div class="card__color color-pink"></div>
                             </div>
                         </article>
                         <article class="prom__card">
-                            <img src="img/pushup.jpg" alt="alt"/>
-                            <h2 class="card__title">Sujetador Push Up</h2>
-                            <h3 class="card__price">S/. 50.00</h3>
+                            <img src="img/setfairy.jpeg" alt="alt"/>
+                            <h2 class="card__title">Set Fairy</h2>
+                            <h3 class="card__price">S/. 60.00</h3>
                             <div class="card__colors">
                                 <div class="card__color color-orange"></div>
                                 <div class="card__color color-red"></div>
                             </div>
                         </article>
                         <article class="prom__card">
-                            <img src="img/tanga.jpg" alt="alt"/>
-                            <h2 class="card__title">Tanga</h2>
-                            <h3 class="card__price">S/. 30.00</h3>
+                            <img src="img/sweetseduction.jpeg" alt="alt"/>
+                            <h2 class="card__title">Sweet Seduction</h2>
+                            <h3 class="card__price">S/. 75.00</h3>
                             <div class="card__colors">
                                 <div class="card__color color-yellow"></div>
                                 <div class="card__color color-pink"></div>
@@ -136,7 +131,18 @@
                 </div>
             </section>
         </main>
-
+        
+        <div class="contact-section">
+            <h1>Contáctanos</h1>
+            <form class="contact-form">
+                <input type="text" class="contact-form-text" placeholder="Nombre">
+                <input type="email" class="contact-form-text" placeholder="Email">
+                <input type="text" class="contact-form-text" placeholder="Teléfono">
+                <textarea class="contact-form-text" placeholder="Mensaje"></textarea>
+                <input type="submit" class="contact-form-btn" value="Enviar">
+            </form>
+        </div>
+        
         <footer class="footer">
             <div class="footer__content">
                 <div class="footer__logo">
@@ -157,9 +163,9 @@
                 </div>
             </div>
             <div class="footer__info">
-                <p>Dirección: Tu dirección</p>
-                <p>Teléfono: Tu número de teléfono</p>
-                <p>Email: tu@email.com</p>
+                <p>Dirección: Urb. Estibadores Mz.G Lt.36 Vipol-Callao</p>
+                <p>Teléfono: 956916201</p>
+                <p>Email: jaziroliveram@gmail.com</p>
             </div>
         </footer>
     </body>
