@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Lacquer');
+
+:root{
+    --NutitoFont:  'Nunito', sans-serif;
+    
+    --primary-color: #ef9cc1;
+    --secondary-color: #414141;
+    --terciary-color: #e16cbc;
+}
+
 body{
-    font-family: 'Nunito', sans-serif;
     margin: 0;
 }
 * {
+    font-family: var(--NutitoFont);
     box-sizing: border-box;
 }

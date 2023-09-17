@@ -6,55 +6,17 @@
         <link rel="stylesheet" href="css/global.css"/>
         <link rel="stylesheet" href="css/header.css"/>
         <link rel="stylesheet" href="css/footer.css"/>
-        
+
         <link rel="stylesheet" href="css/about_us.css"/>
-        
-        <script src="js/index.js" defer></script>
+
+        <script src="js/loadTemplates.js" defer></script>
         <!-- Font awseome icons -->
         <script src="https://kit.fontawesome.com/15feb8d600.js" crossorigin="anonymous"></script>
-        <title>Nosotros</title>
+        <title>S&D</title>
     </head>
     <body>
-        <header class="header">
-            <div class="header__left">
-                <ul class="sm-content">
-                    <li class="sm sm-instagram"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="sm sm-facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="sm sm-youtube"><a href="$"><i class="fa-brands fa-youtube"></i></a></li>
-                </ul>
-            </div>
-            <div class="header__center">
-                <div class="logo-content">
-                    <a href="#">
-                        <img src="img/syd-logo.jpg" alt="Logo de Secrets & Details"/>
-                    </a>
-                </div>
-            </div>
-            <div class="header__right">
-                <div class="info-content">
-                    <a href="#" class="wsp-link">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <p>+51 998776112</p>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <nav class="navbar">
-            <ul class="navbar__links">
-                <li class="navbar__link"><a href="index.jsp">Inicio</a></li>
-                <li class="navbar__link"><a href="about_us.jsp">Nosotros</a></li>
-                <li class="navbar__link"><a href="#">Catálogo</a></li>
-                <li class="navbar__link"><a href="#">Contacto</a></li>
-            </ul>
+        <header id="header"></header>
 
-            <button class="navbar__toggler" type="button" title="navbar__toggler-btn">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </button>
-        </nav>
-
-        
         <div class="head">
             <h1>Nosotros</h1>
         </div>
@@ -121,32 +83,7 @@
                 </div>
             </div>
         </div>        
-        
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="footer__logo">
-                    <img src="img/syd-logo.jpg" alt="Logo de la tienda de lencería">
-                </div>
-                <div class="footer__links">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Catálogo</a></li>
-                        <li><a href="#">Acerca de Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer__social">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="footer__info">
-                <p>Dirección: Tu dirección</p>
-                <p>Teléfono: Tu número de teléfono</p>
-                <p>Email: tu@email.com</p>
-            </div>
-        </footer>
-        
+
+        <footer id="footer"></footer>        
     </body>
 </html>
