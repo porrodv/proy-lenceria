@@ -113,7 +113,7 @@ button{
     z-index: 10;
 }
 
-.slider__nav a{
+.slider__nav .slide-btn{
     width: 15px;
     height: 15px;
     border-radius: 50%;
