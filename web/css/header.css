@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    font-family: 'Abhaya Libre', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: large;
+    font-weight: 400;
+}
+
 :root {
     --navbarHeight: 65px;
     --sidebarWidth: 45vw;
-    --navbarBackground: rgb(236, 210, 195);
+    --navbarBackground: #ecd2c3;
     --primary: #080808;
-    --secondary: #ad6a83;
+    --secondary: #ecd2c3;
 }
 
 ul {
     padding: 0;
     margin: 0;
 }
+
 
 
 .top{
@@ -22,6 +31,12 @@ ul {
 }
 .top__left{
     margin: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
 }
 
 .sm-content{
@@ -29,6 +44,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 1.2rem;
 }
 .sm-content .sm{
@@ -51,17 +67,20 @@ ul {
 
 
 .top__center{
+    display: flex;
+    align-items: center;
     height: 100%;
     padding: 0 2rem;
+    font-size: 50px;
+    
+
 }
-.logo-content{
-    width: 200px;
-    height: 100%;
-}
+
 .logo-content img{
-    width: 100%;
     height: 100%;
     object-fit: contain;
+    margin: 10;
+    padding: 15px;
 }
 
 
@@ -72,7 +91,7 @@ ul {
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    color: green;
+    color: rgb(57, 170, 57);
 }
 .info-content .wsp-link i{
     font-size: 25px;
@@ -80,17 +99,28 @@ ul {
 
 
 /* Navbar */
-.navbar {
+
+.abc {
+    width: 100%;
     position: relative;
-    background: var(--primary);
-    color: #fff;
-    padding: 0 15px;
-    width: 100%;
-    height: var(--navbarHeight);
-    display: flex;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    background-color: #080808;
+    color: #fff;
+    font-size: 20px;
+    padding: 7px;
+}
+.navbar {
+}
+.navbar1 {
+    position: relative;
+    background: var(--secondary);
+    color: #080808;
     width: 100%;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    padding: 0px 25px;
 }
 .navbar__links {
     height: 100%;
@@ -109,14 +139,19 @@ ul {
 }
 .navbar__link a {
     text-decoration: none;
-    color: #fff;
+    color: #080808;
+    font-size: 30px;
+    font-weight: 500;
 }
 .navbar__link:hover {
-    background: var(--primary-color);
+    background:var(--secondary);
     cursor: pointer;
 }
 .navbar__link:hover a {
-    color: var(--secondary-color);
+    color:  #fff;
+    font-size: 40px;
+    font-weight: 600;
+    transition: 0.8s;
 }
 
 .navbar.sticky {

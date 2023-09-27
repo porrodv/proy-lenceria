@@ -37,8 +37,11 @@
                 </button>
             </div>
         </div>
-
         <header id="header"></header>
+        
+
+</nav>
+
 
         <section class="slider">
             <div class="slider__content">

@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito|Lacquer');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 :root{
-    --NutitoFont:  'Nunito', sans-serif;
-    
-    --primary-color: #ef9cc1;
-    --secondary-color: #414141;
-    --terciary-color: #e16cbc;
+    --NutitoFont: 'Cormorant Garamond', serif;
+    --primary-color: #ecd2c3;
+    --secondary-color: #080808;
+    --terciary-color: #d3b4a2;
 }
 
 body{
