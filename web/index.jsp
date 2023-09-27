@@ -73,30 +73,36 @@
                     </article>
                     <article class="prom__card">
                         <img src="img/Corset.jpg" alt="alt"/>
-                        <h2 class="card__title">Corset Angeline</h2>
-                        <h3 class="card__price">S/. 68.00</h3>
-                        <div class="card__colors">
-                            <div class="card__color color-red"></div>
-                            <div class="card__color color-pink"></div>
-                        </div>
+                        <section class="card__details">
+                            <h2 class="card__title">Corset Angeline</h2>
+                            <h3 class="card__price">S/. 68.00</h3>
+                            <div class="card__colors">
+                                <div class="card__color color-red"></div>
+                                <div class="card__color color-pink"></div>
+                            </div>
+                        </section>
                     </article>
                     <article class="prom__card">
                         <img src="img/setfairy.jpg" alt="alt"/>
-                        <h2 class="card__title">Set Fairy</h2>
-                        <h3 class="card__price">S/. 60.00</h3>
-                        <div class="card__colors">
-                            <div class="card__color color-orange"></div>
-                            <div class="card__color color-red"></div>
-                        </div>
+                        <section class="card__details">
+                            <h2 class="card__title">Set Fairy</h2>
+                            <h3 class="card__price">S/. 60.00</h3>
+                            <div class="card__colors">
+                                <div class="card__color color-orange"></div>
+                                <div class="card__color color-red"></div>
+                            </div>
+                        </section>
                     </article>
                     <article class="prom__card">
                         <img src="img/sweetseduction.jpeg" alt="alt"/>
-                        <h2 class="card__title">Sweet Seduction</h2>
-                        <h3 class="card__price">S/. 75.00</h3>
-                        <div class="card__colors">
-                            <div class="card__color color-yellow"></div>
-                            <div class="card__color color-pink"></div>
-                        </div>
+                        <section class="card__details">
+                            <h2 class="card__title">Sweet Seduction</h2>
+                            <h3 class="card__price">S/. 75.00</h3>
+                            <div class="card__colors">
+                                <div class="card__color color-yellow"></div>
+                                <div class="card__color color-pink"></div>
+                            </div>
+                        </section>
                     </article>
                 </div>
 

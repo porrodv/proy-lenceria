@@ -7,7 +7,7 @@
 }
 
 :root {
-    --navbarHeight: 65px;
+    --navbarHeight: 90px;
     --sidebarWidth: 45vw;
     --navbarBackground: #ecd2c3;
     --primary: #080808;
@@ -21,14 +21,7 @@ ul {
 
 
 
-.top{
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.7rem;
-    background-color: var(--navbarBackground);
-}
+
 .top__left{
     margin: 1rem;
     list-style: none;
@@ -100,7 +93,7 @@ ul {
     text-align: center;
     background-color: #080808;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 4px;
 }
 .navbar1 {
@@ -109,7 +102,7 @@ ul {
     color: #080808;
     width: 100%;
     display: flex;
-    height: 90px;
+    height: var(--navbarHeight);
     justify-content: space-between;
     padding: 0px 25px;
 }
@@ -119,6 +112,7 @@ ul {
     display: flex;
     align-items: center;
     transition: 0.2s ease all, 0s ease background;
+    gap: 20px;
 }
 .navbar__link {
     height: var(--navbarHeight);
@@ -140,9 +134,9 @@ ul {
 }
 .navbar__link:hover a {
     color:  #fff;
-    font-size: 40px;
+    transform: scale(1.2);
     font-weight: 600;
-    transition: 0.8s;
+    transition: 0.2s;
 }
 
 .navbar.sticky {
