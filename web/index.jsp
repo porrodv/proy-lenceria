@@ -37,7 +37,6 @@
                 </button>
             </div>
         </div>
-
         <header id="header"></header>
 
         <section class="slider">
