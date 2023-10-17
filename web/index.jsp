@@ -19,7 +19,8 @@
     </head>
 
     <body>
-
+        <header id="header"></header>
+        
         <div class="sticky-icons">
             <input type="checkbox" id="toggle-btn" checked/>
             <label for="toggle-btn"><i class="fa-solid fa-play arrow-icon"></i></label>
@@ -37,7 +38,6 @@
                 </button>
             </div>
         </div>
-        <header id="header"></header>
 
         <section class="slider">
             <div class="slider__content">
@@ -111,17 +111,6 @@
                 </div>
             </div>
         </section>
-
-        <div class="contact-section">
-            <h1>Contáctanos</h1>
-            <form class="contact-form">
-                <input type="text" class="contact-form-text" placeholder="Nombre">
-                <input type="email" class="contact-form-text" placeholder="Email">
-                <input type="text" class="contact-form-text" placeholder="Teléfono">
-                <textarea class="contact-form-text" placeholder="Mensaje"></textarea>
-                <input type="submit" class="contact-form-btn" value="Enviar">
-            </form>
-        </div>
 
         <footer id="footer"></footer>
     </body>

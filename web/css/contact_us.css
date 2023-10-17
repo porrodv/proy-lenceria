@@ -1,8 +1,10 @@
-.contact-section *{
+*{
   margin: 0;
   padding: 0;
   font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
 }
+
 .contact-section{
   background-size: cover;
   padding: 40px 0;
@@ -56,3 +58,4 @@ textarea.contact-form-text{
 .contact-form-btn:hover{
   background: #2980b9;
 }
+
