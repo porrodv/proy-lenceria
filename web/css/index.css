@@ -85,7 +85,7 @@ button{
 
 /*SLIDER*/
 .slider{
-    margin-top: calc(var(--navbarHeight) + 10px);
+    margin-top: calc(var(--navbarHeight) );
     position: relative;
     height: 400px;
     width: 100%;
@@ -138,6 +138,8 @@ button{
     justify-content: center;
     align-items: baseline;
     gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 0px;
 
     & * {
         margin: 0;
@@ -157,6 +159,7 @@ button{
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 2.5rem 0;
+    margin-top: 15px;
 }
 .prom__card{
     width: 250px;
@@ -186,6 +189,7 @@ button{
     display: grid;
     place-content: center;
     padding: 2rem;
+    padding-top: 0px;
 }
 .prom__more-btn{
     background-color: var(--terciary-color);

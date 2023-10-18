@@ -1,15 +1,15 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>S&D</title>
-        <link rel="stylesheet" href="css/global.css"/>
-        <link rel="stylesheet" href="css/header.css"/>
-        <link rel="stylesheet" href="css/footer.css"/>
-        <link rel="stylesheet" href="css/contact_us.css"/>
-        <link rel="stylesheet" href="css/about_us.css"/>
-        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/footer.css" />    
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/tienda.css" />
 
         <script src="js/loadTemplates.js" defer></script>
         <script src="js/slider.js" defer></script>
@@ -20,14 +20,14 @@
 
     <body>
         <header id="header"></header>
-        
+
         <div class="sticky-icons">
-            <input type="checkbox" id="toggle-btn" checked/>
+            <input type="checkbox" id="toggle-btn" checked />
             <label for="toggle-btn"><i class="fa-solid fa-play arrow-icon"></i></label>
 
             <div class="sticky-icons__content">
                 <button id="ig-btn">
-                    <a href="#" class="ig-link">
+                    <a href="https://www.instagram.com/secrets.and.details.lenceria/" class="ig-link" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </button>
@@ -41,9 +41,9 @@
 
         <section class="slider">
             <div class="slider__content">
-                <img id="slide-1" class="slide" src="img/img2.jpg" alt="alt"/>
-                <img id="slide-2" class="slide" src="img/pushup.jpg" alt="alt"/>
-                <img id="slide-3" class="slide" src="img/tanga.jpg" alt="alt"/>
+                <img id="slide-1" class="slide" src="img/Corset.jpg" alt="alt" />
+                <img id="slide-2" class="slide" src="img/sweetseduction.jpeg" alt="alt" />
+                <img id="slide-3" class="slide" src="img/setfairy.png" alt="alt" />
             </div>
             <div class="slider__nav">
                 <a href="" class="slide-btn" slide-value="1"></a>
@@ -53,65 +53,33 @@
         </section>
 
         <section class="prom">
-            <div class="prom__content">
-                <div class="prom__title">
-                    <h3 class="second">Descubre nuestras</h3>
-                    <h1 class="main">Promociones</h1>
-                </div>
+            <div class="prom__title">
+                <h3 class="second">Descubre nuestras</h3>
+                <h1 class="main">Promociones</h1>
+            </div>
+            <section class="contenedor">
 
-                <div class="prom__cards">
-                    <article class="prom__card">
-                        <img src="img/setdeluxe.jpg" alt="alt"/>
-                        <section class="card__details">
-                            <h2 class="card__title">Set Deluxe</h2>
-                            <h3 class="card__price">S/. 70.00</h3>
-                            <div class="card__colors">
-                                <div class="card__color color-black"></div>
-                                <div class="card__color color-blue"></div>
+                <!-- Contenedor de elementos -->
+                <div class="contenedor-items">
+                    <c:forEach var="product" items="${products}" varStatus="loopStatus">
+                        <c:if test="${loopStatus.index < 3}">
+                            <div class="item" product-id="${product.getId()}">
+                                <img src="img/${product.getImg()}" alt="" class="img-item">
+                                <span class="titulo-item">${product.getName()}</span>
+                                <span class="precio-item">S${product.getPrice()}</span>
+                                <button class="boton-item">Agregar al Carrito</button>
                             </div>
-                        </section>
-                    </article>
-                    <article class="prom__card">
-                        <img src="img/Corset.jpg" alt="alt"/>
-                        <section class="card__details">
-                            <h2 class="card__title">Corset Angeline</h2>
-                            <h3 class="card__price">S/. 68.00</h3>
-                            <div class="card__colors">
-                                <div class="card__color color-red"></div>
-                                <div class="card__color color-pink"></div>
-                            </div>
-                        </section>
-                    </article>
-                    <article class="prom__card">
-                        <img src="img/setfairy.jpg" alt="alt"/>
-                        <section class="card__details">
-                            <h2 class="card__title">Set Fairy</h2>
-                            <h3 class="card__price">S/. 60.00</h3>
-                            <div class="card__colors">
-                                <div class="card__color color-orange"></div>
-                                <div class="card__color color-red"></div>
-                            </div>
-                        </section>
-                    </article>
-                    <article class="prom__card">
-                        <img src="img/sweetseduction.jpeg" alt="alt"/>
-                        <section class="card__details">
-                            <h2 class="card__title">Sweet Seduction</h2>
-                            <h3 class="card__price">S/. 75.00</h3>
-                            <div class="card__colors">
-                                <div class="card__color color-yellow"></div>
-                                <div class="card__color color-pink"></div>
-                            </div>
-                        </section>
-                    </article>
-                </div>
+                        </c:if>
+                    </c:forEach>
+                </div>   
 
-                <div class="prom__more">
-                    <button class="prom__more-btn">Ver cat√°logo completo</button>
-                </div>
+            </section>
+            <div class="prom__more">
+                <button class="prom__more-btn" onclick="window.location.href = 'ProductController?action=List'">Ver cat·logo completo</button>
             </div>
         </section>
 
         <footer id="footer"></footer>
     </body>
+
 </html>
